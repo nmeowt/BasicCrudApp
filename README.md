@@ -7,16 +7,16 @@ git clone https://github.com/nmeowt/BasicCrudApp.git
 ```
 ## Setup Database
 
-**Go to** - `~/src/main/resources/db/sql/V1_SQL.sql`
+**Go to** `~/src/main/resources/db/sql/V1_SQL.sql`
 
 ## Checkout API
 
-**Go to** - `~/src/main/resources/db/api/CRUD.postman_collection.json`
+**Go to** `~/src/main/resources/db/api/CRUD.postman_collection.json`
 
 **Import to your Postman**
 
 ## Setup enviroment
-**create application.yml in** - ~/src/main/resources/
+**create application.yml in** `~/src/main/resources/`
 
 **copy and paste in**
 
