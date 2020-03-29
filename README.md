@@ -16,9 +16,9 @@ git clone https://github.com/nmeowt/BasicCrudApp.git
 **Import to your Postman**
 
 ## Setup enviroment
-**create application.yml in** `~/src/main/resources/`
+**Create `application.yml` in** `~/src/main/resources/`
 
-**copy and paste in**
+**Copy and paste in**
 
 ```
 server:
