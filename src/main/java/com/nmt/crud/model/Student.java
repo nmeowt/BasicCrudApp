@@ -9,6 +9,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import com.nmt.crud.dto.StudentDTO;
+
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -28,7 +30,13 @@ public class Student implements Serializable {
 
 	@Column(name = "Name_Student")
 	private String nameStudent;
-	
-	@Column(name="Id_Class")
+
+	@Column(name = "Id_Class")
 	private int idClass;
+
+	public Student(StudentDTO studentDTO) {
+		this.idStudent = studentDTO.getIdStudent();
+		this.nameStudent = studentDTO.getNameStudent();
+		this.idClass = studentDTO.getStudentClass().getIdClass();
+	}
 }

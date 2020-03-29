@@ -1,0 +1,206 @@
+{
+	"info": {
+		"_postman_id": "508b8e78-1070-407c-a90f-8b7e5140e203",
+		"name": "Testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Student",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/getAllStudent",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"getAllStudent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Class",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/getAllClass",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"getAllClass"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Or Update A Class",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"idClass\": 2,\n    \"nameClass\": \"Test Class Deletingg\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/addOrUpdateClass",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"addOrUpdateClass"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Or Update A Student",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"idStudent\": 2,\n    \"nameStudent\": \"Test Student Deletingg\",\n    \"studentClass\": {\n        \"idClass\": 2\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/addOrUpdateStudent",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"addOrUpdateStudent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete A Student",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"idStudent\": 2,\n    \"nameStudent\": \"Test Student Deletingg\",\n    \"studentClass\": {\n        \"idClass\": 2,\n        \"nameClass\": \"Test Class Deletingg\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/deleteStudent",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"deleteStudent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete A Class",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"idClass\": 2,\n    \"nameClass\": \"Test Class Deletingg\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/deleteClass",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"deleteClass"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "e40cba78-2d5f-4fd9-9549-7b6187050712",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "bcaf51fa-9bca-470b-bf0c-e79dbf5a5f08",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "6cea3698-ad8b-41a1-9cd5-ba370ac1b3cc",
+			"key": "host",
+			"value": "localhost:8090",
+			"type": "string"
+		}
+	],
+	"protocolProfileBehavior": {}
+}

@@ -1,4 +1,5 @@
 package com.nmt.crud.model;
+
 import java.io.Serializable;
 
 import javax.persistence.Column;
@@ -17,14 +18,14 @@ import lombok.Setter;
 @Setter
 @Table(name = "Student_Class")
 @NoArgsConstructor
-public class StudentClass implements Serializable{
+public class StudentClass implements Serializable {
 	private static final long serialVersionUID = 1L;
-	
+
 	@Id
 	@Column(name = "Id_Class")
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int idClass;
-	
-	@Column(name="Name_Class")
+
+	@Column(name = "Name_Class")
 	private String nameClass;
 }
