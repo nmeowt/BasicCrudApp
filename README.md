@@ -5,16 +5,20 @@ Basic crud structure for spring boot application
 ```
 git clone https://github.com/nmeowt/BasicCrudApp.git
 ```
-**Setup Database**
-> Go to ~/src/main/resources/db/sql/V1_SQL.sql
+## Setup Database
 
-**Checkout API**
-> Go to ~/src/main/resources/db/api/CRUD.postman_collection.json
-> Import to your Postman
+**Go to** - `~/src/main/resources/db/sql/V1_SQL.sql`
 
-**Setup enviroment**
-> create application.yml in ~/src/main/resources/
-> copy and paste in
+## Checkout API
+
+**Go to** - `~/src/main/resources/db/api/CRUD.postman_collection.json`
+
+**Import to your Postman**
+
+## Setup enviroment
+**create application.yml in** - ~/src/main/resources/
+
+**copy and paste in**
 
 ```
 server:
