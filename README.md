@@ -2,9 +2,9 @@
 Basic crud structure for spring boot application
 
 ## Using Project
-
-git clone https://github.com/nmeowt/BasicCrudApp.git
-
+	```
+	git clone https://github.com/nmeowt/BasicCrudApp.git
+	```
 **Setup Database**
 > Go to ~/src/main/resources/db/sql/V1_SQL.sql
 
@@ -15,7 +15,7 @@ git clone https://github.com/nmeowt/BasicCrudApp.git
 **Setup enviroment**
 > create application.yml in ~/src/main/resources/
 > copy and paste in
-  
+  	```
 	server:
 	    port: 8090
 	spring:
@@ -25,4 +25,5 @@ git clone https://github.com/nmeowt/BasicCrudApp.git
 	        username: sa
 	        password: Nmtrang1999
 	        platform: mssql
+	```
 ## Run and Enjoy !
