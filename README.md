@@ -14,13 +14,14 @@ Basic crud structure for spring boot application
 **Setup enviroment**
 > create application.yml in ~/src/main/resources/
   copy and paste in
-			server:
-				port: 8090
-    		spring:
-				datasource:
-					driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
-					url: jdbc:sqlserver://localhost;databaseName=crud
-					username: sa
-					password: Nmtrang1999
-					platform: mssql
+  
+	server:
+		port: 8090
+	spring:
+		datasource:
+			driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+			url: jdbc:sqlserver://localhost;databaseName=crud
+			username: sa
+			password: Nmtrang1999
+			platform: mssql
 ## Run and Enjoy !
